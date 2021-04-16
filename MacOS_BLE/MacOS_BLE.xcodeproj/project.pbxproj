@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6524E818237504B400F87140 /* InfoAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6524E817237504B300F87140 /* InfoAck.swift */; };
+		6585A728236A8BB3005C35A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A727236A8BB3005C35A8 /* AppDelegate.swift */; };
+		6585A72A236A8BB3005C35A8 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A729236A8BB3005C35A8 /* ScanViewController.swift */; };
+		6585A72C236A8BB4005C35A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6585A72B236A8BB4005C35A8 /* Assets.xcassets */; };
+		6585A72F236A8BB4005C35A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6585A72D236A8BB4005C35A8 /* Main.storyboard */; };
+		6585A73B236A8BB4005C35A8 /* MacOS_BLETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A73A236A8BB4005C35A8 /* MacOS_BLETests.swift */; };
+		6585A746236A8BB4005C35A8 /* MacOS_BLEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A745236A8BB4005C35A8 /* MacOS_BLEUITests.swift */; };
+		6585A754236ACA76005C35A8 /* BLEUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A753236ACA76005C35A8 /* BLEUtils.swift */; };
+		6585A756236C1F55005C35A8 /* CommunicateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A755236C1F55005C35A8 /* CommunicateUtils.swift */; };
+		6585A758237122C2005C35A8 /* InfoPkg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A757237122C2005C35A8 /* InfoPkg.swift */; };
+		6585A75A23712719005C35A8 /* SecretCRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A75923712719005C35A8 /* SecretCRC.swift */; };
+		6585A75F2373C772005C35A8 /* ConnectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A75E2373C772005C35A8 /* ConnectedVC.swift */; };
+		6585A7612373FF6B005C35A8 /* DeviceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6585A7602373FF6B005C35A8 /* DeviceInfoVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6585A737236A8BB4005C35A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585A71C236A8BB3005C35A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585A723236A8BB3005C35A8;
+			remoteInfo = MacOS_BLE;
+		};
+		6585A742236A8BB4005C35A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6585A71C236A8BB3005C35A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6585A723236A8BB3005C35A8;
+			remoteInfo = MacOS_BLE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6524E817237504B300F87140 /* InfoAck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAck.swift; sourceTree = "<group>"; };
+		6585A724236A8BB3005C35A8 /* MacOS_BLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacOS_BLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585A727236A8BB3005C35A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6585A729236A8BB3005C35A8 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		6585A72B236A8BB4005C35A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6585A72E236A8BB4005C35A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6585A730236A8BB4005C35A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585A731236A8BB4005C35A8 /* MacOS_BLE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_BLE.entitlements; sourceTree = "<group>"; };
+		6585A736236A8BB4005C35A8 /* MacOS_BLETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacOS_BLETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585A73A236A8BB4005C35A8 /* MacOS_BLETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_BLETests.swift; sourceTree = "<group>"; };
+		6585A73C236A8BB4005C35A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585A741236A8BB4005C35A8 /* MacOS_BLEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacOS_BLEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585A745236A8BB4005C35A8 /* MacOS_BLEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOS_BLEUITests.swift; sourceTree = "<group>"; };
+		6585A747236A8BB4005C35A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6585A753236ACA76005C35A8 /* BLEUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEUtils.swift; sourceTree = "<group>"; };
+		6585A755236C1F55005C35A8 /* CommunicateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicateUtils.swift; sourceTree = "<group>"; };
+		6585A757237122C2005C35A8 /* InfoPkg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPkg.swift; sourceTree = "<group>"; };
+		6585A75923712719005C35A8 /* SecretCRC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCRC.swift; sourceTree = "<group>"; };
+		6585A75E2373C772005C35A8 /* ConnectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedVC.swift; sourceTree = "<group>"; };
+		6585A7602373FF6B005C35A8 /* DeviceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6585A721236A8BB3005C35A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A733236A8BB4005C35A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A73E236A8BB4005C35A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6524E8162375049C00F87140 /* ACK */ = {
+			isa = PBXGroup;
+			children = (
+				6524E817237504B300F87140 /* InfoAck.swift */,
+			);
+			path = ACK;
+			sourceTree = "<group>";
+		};
+		6585A71B236A8BB3005C35A8 = {
+			isa = PBXGroup;
+			children = (
+				6585A726236A8BB3005C35A8 /* MacOS_BLE */,
+				6585A739236A8BB4005C35A8 /* MacOS_BLETests */,
+				6585A744236A8BB4005C35A8 /* MacOS_BLEUITests */,
+				6585A725236A8BB3005C35A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6585A725236A8BB3005C35A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6585A724236A8BB3005C35A8 /* MacOS_BLE.app */,
+				6585A736236A8BB4005C35A8 /* MacOS_BLETests.xctest */,
+				6585A741236A8BB4005C35A8 /* MacOS_BLEUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6585A726236A8BB3005C35A8 /* MacOS_BLE */ = {
+			isa = PBXGroup;
+			children = (
+				6585A727236A8BB3005C35A8 /* AppDelegate.swift */,
+				6585A729236A8BB3005C35A8 /* ScanViewController.swift */,
+				6585A75E2373C772005C35A8 /* ConnectedVC.swift */,
+				6585A7602373FF6B005C35A8 /* DeviceInfoVC.swift */,
+				6585A75B2373B3FE005C35A8 /* BLE */,
+				6585A72B236A8BB4005C35A8 /* Assets.xcassets */,
+				6585A72D236A8BB4005C35A8 /* Main.storyboard */,
+				6585A730236A8BB4005C35A8 /* Info.plist */,
+				6585A731236A8BB4005C35A8 /* MacOS_BLE.entitlements */,
+			);
+			path = MacOS_BLE;
+			sourceTree = "<group>";
+		};
+		6585A739236A8BB4005C35A8 /* MacOS_BLETests */ = {
+			isa = PBXGroup;
+			children = (
+				6585A73A236A8BB4005C35A8 /* MacOS_BLETests.swift */,
+				6585A73C236A8BB4005C35A8 /* Info.plist */,
+			);
+			path = MacOS_BLETests;
+			sourceTree = "<group>";
+		};
+		6585A744236A8BB4005C35A8 /* MacOS_BLEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6585A745236A8BB4005C35A8 /* MacOS_BLEUITests.swift */,
+				6585A747236A8BB4005C35A8 /* Info.plist */,
+			);
+			path = MacOS_BLEUITests;
+			sourceTree = "<group>";
+		};
+		6585A75B2373B3FE005C35A8 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				6585A753236ACA76005C35A8 /* BLEUtils.swift */,
+				6585A755236C1F55005C35A8 /* CommunicateUtils.swift */,
+				6524E8162375049C00F87140 /* ACK */,
+				6585A75C2373B40D005C35A8 /* PKG */,
+				6585A75D2373B434005C35A8 /* CRC */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		6585A75C2373B40D005C35A8 /* PKG */ = {
+			isa = PBXGroup;
+			children = (
+				6585A757237122C2005C35A8 /* InfoPkg.swift */,
+			);
+			path = PKG;
+			sourceTree = "<group>";
+		};
+		6585A75D2373B434005C35A8 /* CRC */ = {
+			isa = PBXGroup;
+			children = (
+				6585A75923712719005C35A8 /* SecretCRC.swift */,
+			);
+			path = CRC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6585A723236A8BB3005C35A8 /* MacOS_BLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585A74A236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLE" */;
+			buildPhases = (
+				6585A720236A8BB3005C35A8 /* Sources */,
+				6585A721236A8BB3005C35A8 /* Frameworks */,
+				6585A722236A8BB3005C35A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacOS_BLE;
+			productName = MacOS_BLE;
+			productReference = 6585A724236A8BB3005C35A8 /* MacOS_BLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6585A735236A8BB4005C35A8 /* MacOS_BLETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585A74D236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLETests" */;
+			buildPhases = (
+				6585A732236A8BB4005C35A8 /* Sources */,
+				6585A733236A8BB4005C35A8 /* Frameworks */,
+				6585A734236A8BB4005C35A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6585A738236A8BB4005C35A8 /* PBXTargetDependency */,
+			);
+			name = MacOS_BLETests;
+			productName = MacOS_BLETests;
+			productReference = 6585A736236A8BB4005C35A8 /* MacOS_BLETests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6585A740236A8BB4005C35A8 /* MacOS_BLEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6585A750236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLEUITests" */;
+			buildPhases = (
+				6585A73D236A8BB4005C35A8 /* Sources */,
+				6585A73E236A8BB4005C35A8 /* Frameworks */,
+				6585A73F236A8BB4005C35A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6585A743236A8BB4005C35A8 /* PBXTargetDependency */,
+			);
+			name = MacOS_BLEUITests;
+			productName = MacOS_BLEUITests;
+			productReference = 6585A741236A8BB4005C35A8 /* MacOS_BLEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6585A71C236A8BB3005C35A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = viatom;
+				TargetAttributes = {
+					6585A723236A8BB3005C35A8 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					6585A735236A8BB4005C35A8 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6585A723236A8BB3005C35A8;
+					};
+					6585A740236A8BB4005C35A8 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 6585A723236A8BB3005C35A8;
+					};
+				};
+			};
+			buildConfigurationList = 6585A71F236A8BB3005C35A8 /* Build configuration list for PBXProject "MacOS_BLE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6585A71B236A8BB3005C35A8;
+			productRefGroup = 6585A725236A8BB3005C35A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6585A723236A8BB3005C35A8 /* MacOS_BLE */,
+				6585A735236A8BB4005C35A8 /* MacOS_BLETests */,
+				6585A740236A8BB4005C35A8 /* MacOS_BLEUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6585A722236A8BB3005C35A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585A72C236A8BB4005C35A8 /* Assets.xcassets in Resources */,
+				6585A72F236A8BB4005C35A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A734236A8BB4005C35A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A73F236A8BB4005C35A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6585A720236A8BB3005C35A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585A72A236A8BB3005C35A8 /* ScanViewController.swift in Sources */,
+				6585A754236ACA76005C35A8 /* BLEUtils.swift in Sources */,
+				6585A7612373FF6B005C35A8 /* DeviceInfoVC.swift in Sources */,
+				6524E818237504B400F87140 /* InfoAck.swift in Sources */,
+				6585A728236A8BB3005C35A8 /* AppDelegate.swift in Sources */,
+				6585A756236C1F55005C35A8 /* CommunicateUtils.swift in Sources */,
+				6585A75F2373C772005C35A8 /* ConnectedVC.swift in Sources */,
+				6585A75A23712719005C35A8 /* SecretCRC.swift in Sources */,
+				6585A758237122C2005C35A8 /* InfoPkg.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A732236A8BB4005C35A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585A73B236A8BB4005C35A8 /* MacOS_BLETests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6585A73D236A8BB4005C35A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6585A746236A8BB4005C35A8 /* MacOS_BLEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6585A738236A8BB4005C35A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585A723236A8BB3005C35A8 /* MacOS_BLE */;
+			targetProxy = 6585A737236A8BB4005C35A8 /* PBXContainerItemProxy */;
+		};
+		6585A743236A8BB4005C35A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6585A723236A8BB3005C35A8 /* MacOS_BLE */;
+			targetProxy = 6585A742236A8BB4005C35A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6585A72D236A8BB4005C35A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6585A72E236A8BB4005C35A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6585A748236A8BB4005C35A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6585A749236A8BB4005C35A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6585A74B236A8BB4005C35A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacOS_BLE/MacOS_BLE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6585A74C236A8BB4005C35A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MacOS_BLE/MacOS_BLE.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6585A74E236A8BB4005C35A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacOS_BLE.app/Contents/MacOS/MacOS_BLE";
+			};
+			name = Debug;
+		};
+		6585A74F236A8BB4005C35A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLETests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLETests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacOS_BLE.app/Contents/MacOS/MacOS_BLE";
+			};
+			name = Release;
+		};
+		6585A751236A8BB4005C35A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacOS_BLE;
+			};
+			name = Debug;
+		};
+		6585A752236A8BB4005C35A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MacOS_BLEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.viatom.MacOS-BLEUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacOS_BLE;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6585A71F236A8BB3005C35A8 /* Build configuration list for PBXProject "MacOS_BLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585A748236A8BB4005C35A8 /* Debug */,
+				6585A749236A8BB4005C35A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585A74A236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585A74B236A8BB4005C35A8 /* Debug */,
+				6585A74C236A8BB4005C35A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585A74D236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585A74E236A8BB4005C35A8 /* Debug */,
+				6585A74F236A8BB4005C35A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6585A750236A8BB4005C35A8 /* Build configuration list for PBXNativeTarget "MacOS_BLEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6585A751236A8BB4005C35A8 /* Debug */,
+				6585A752236A8BB4005C35A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6585A71C236A8BB3005C35A8 /* Project object */;
+}
